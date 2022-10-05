@@ -1,0 +1,30 @@
+<%-  include('partials/header')   -%>
+
+<div class="container" style="display:flex; justify-content:center; margin-top: 1%;">
+    <form action="/signup" class="p-4 p-md-5 border rounded-3 bg-light" method="POST" style="border:2px solid #d3d3d3b2;box-shadow: 3px 5px 10px 2px; border-radius: 10%; padding:4%;">
+        <div class="form-floating">
+            <label for="floatingName">Name</label>
+            <input type="text" name="username" class="form-control bottom" placeholder="Name" required >
+            
+        </div>
+        <br>
+        <div class="form-floating">
+          <label for="floatingEmail">Email address</label>
+          <input type="email" name="email" class="form-control bottom" placeholder="name@example.com" required >
+          
+      </div>
+      <br>
+      <div class="form-floating">
+          <label for="floatingPassword">Password</label>
+          <input type="password" name="password" class="form-control middle" placeholder="Password" required >
+          
+      </div>
+      <br>
+
+      <button class="w-100 btn btn-success sign-up" type="submit">Sign-Up</button>
+      <hr class="my-4">
+      <small class="text-muted">Sign up, you become member of <b>DAILY JOURNAL</b>.</small>
+    </form>
+  </div>
+
+<%-  include('partials/footer')   -%> 
